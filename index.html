@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head> 
+
+		<title> Formulário Cadastro de Clientes</title>
+
+		<body>
+
+			<h3 style="font-style: bold;" > Cadastro de Cliente</h3>
+
+			<form method="GET" name="form_cliente" action="http://localhost/clientes.php">
+
+			<table>
+
+				<tr>
+
+					<td style="color:blue;">Nome:*</td>
+
+					<td><input type="text" required name="txtnome"></td>
+
+				</tr>
+
+				<tr>
+
+					<td style="color:blue;">Endereço:</td>
+
+					<td><textarea name="txtendereco" cols="30" rows="4"> </textarea></td>
+
+				</tr>
+
+				<tr>
+
+					<td style="color:blue;"> Estado: </td>
+
+					<td>
+
+					<select name="list_Estados">
+
+						<option value="Nenhum">Selecione um estado</option> 
+
+						<option value="DF"> Distrito Federal</option> 
+
+						<option value="RJ"> Rio de Janeiro</option> 
+
+						<option value="ES"> Espírito Santo</option>
+
+						<option value="SP"> São Paulo</option> 							
+
+					<select>
+
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td style="color:blue;">Sexo:</td>
+
+					<td style="color:blue;"><input type="radio" name="sexo" Value="M">Masculino
+
+					<input type="radio" name="sexo" Value="F">Feminino<td>
+
+				</tr>
+
+					<tr>
+
+					<td style="color:blue;">Área de Interesse:</td>
+
+					<td style="color:blue;"><input type="checkbox" name="interesse" Value="Música">Música
+
+					<input type="checkbox" name="interesse" Value="Esporte">Esporte
+
+					<input type="checkbox" name="interesse" Value="Livros">Livros
+
+					<input type="checkbox" name="interesse" Value="Religião">Religião
+
+					<td>
+
+				</tr>
+
+				<tr> 
+
+					<td style="color:blue;">Senha:</td>
+
+					<td><input type="password" name="txtpass"></td>
+
+				</tr>
+
+			</table>
+
+					<input type="submit" name="Btenviar" value="Gravar">
+
+					<input type="reset" name="Btenviar" value="Limpar">
+
+			</form>
+
+	
+
+		<body>
+
+	</head>
+
+</html>
