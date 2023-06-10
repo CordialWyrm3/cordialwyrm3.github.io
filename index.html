@@ -1,105 +1,111 @@
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"
+    title>Brepersound</title>
+    <link rel="stylesheet" href="style.css">
 
-<html>
+</head>
+<body> 
+    <header>
+      <a class="h1" href=""
+      <h1>Brepersound</h1>
+        <nav>
+          <ul>
 
-	<head> 
+            <li><a href="#home">Página Inicial</a></li>
+            <li><a href="#Serviços">Nossos serviços</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#inscrição">Contato para mais</a></li>
+          </ul>
+        </nav>
+      </header>
 
-		<title> Formulário Cadastro de Clientes</title>
+      <main>
+        <section id="home">
+          <h2>Página Inicial</h2>
+          <p>Bem-vindos ao brepersound, aqui você encontrara o melhor estudio de games da sua frequencia!</p>
+          <img src="devgame.jpg" alt="desenvolvimento de software" style="width: 800px; height: 500px">
+          <img src="codigo imagem.jpg" style="width: 800px; height: 500px">
+        
+        </section>
+        <section id="Serviços">
+          <h2>Nossos serviços</h2>
+          <div>
+          <li><p>Traga vida e personalidade para suas ideias.</p></li>
 
-		<body>
+          <li>Torne seus projetos mais bonitos.</li>
 
-			<h3 style="font-style: bold;" > Cadastro de Cliente</h3>
+          <li>Terceirize o trabalho e ganhe eficiência.</li>
 
-			<form method="GET" name="form_cliente" action="http://localhost/clientes.php">
+          <li>Consiga protótipos extremamente polidos.</li>
 
-			<table>
+          <li>Apresente algo de qualidade para sua comunidade.</li>
 
-				<tr>
+          Com nossos profissionais extremamente criativos e capazes de forma multidisciplinar<br> podemos auxiliar você a levar sua ideia do papel ao mercado ou aprimorar o seu potencial.
 
-					<td style="color:blue;">Nome:*</td>
+          <br>Veja nossos serviços ou entre em contato para transformar suas ideias em realidade!</p></div>
+        </section>
 
-					<td><input type="text" required name="txtnome"></td>
 
-				</tr>
+        <section id="about">
+          <h2>sobre nós</h2>
+          <p>um pouco do nosso trabalho e a equipe</p>
 
-				<tr>
+          <p>Diretor</p>
+          <div>Carl Spencer</div> 
+          <img src="diretorgame.jpg" alt="Diretor da equipe"
+          width="400" height="250">
+          <p></p>
+          
+        <p>Nossos desenvolvedores</p>
+        <img src="developers.jpg" alt="desenvolvedores"
+        width="300" height="220">
+       
+        <p>Alice Taylor</p>
+        <img src="dev alice.jpg" alt="alice"
+        width="183" height="162">
 
-					<td style="color:blue;">Endereço:</td>
+        <p>Alvin Bradford</p>
+        <img src="AlvinDev.jpg" alt="Alvin">
 
-					<td><textarea name="txtendereco" cols="30" rows="4"> </textarea></td>
+        <p>Scott Spencer</p>
+        <img src="scottdev.jpg" alt="Scott"
+        width="183" height="162">
 
-				</tr>
+        <p>Compositor Musical</p>
+        <div>Listopher Carkin</div>
+        <img src="LC.jpg" alt="compositor musical"
+        width="300" height="220">
 
-				<tr>
+        </section>
 
-					<td style="color:blue;"> Estado: </td>
+        <section id="inscrição">
+          <h2> fique por dentro!</h2>
+          <p>se inscreva para receber notificações de novos produtos!</p>
+          <form>
+            <label for="nome">Seu nome:</label>
+            <input type="nome" id="nome" name="nome" placeholder="Seu nome">
+              
+              <p></p>
 
-					<td>
+               <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seu e-mail">
+              
+              <p></p>
 
-					<select name="list_Estados">
+              <label for="cidade">Cidade:</label>
+              <input type="cidade" id="cidade" name="cidade" placeholder="Sua cidade">
 
-						<option value="Nenhum">Selecione um estado</option> 
+                <p></p>
 
-						<option value="DF"> Distrito Federal</option> 
+                <label for="estado">Estado:</label>
+                <input type="estado" id="estado" name="estado" placeholder="seu estado">
 
-						<option value="RJ"> Rio de Janeiro</option> 
+                <p></p>
 
-						<option value="ES"> Espírito Santo</option>
-
-						<option value="SP"> São Paulo</option> 							
-
-					<select>
-
-					</td>
-
-				</tr>
-
-				<tr>
-
-					<td style="color:blue;">Sexo:</td>
-
-					<td style="color:blue;"><input type="radio" name="sexo" Value="M">Masculino
-
-					<input type="radio" name="sexo" Value="F">Feminino<td>
-
-				</tr>
-
-					<tr>
-
-					<td style="color:blue;">Área de Interesse:</td>
-
-					<td style="color:blue;"><input type="checkbox" name="interesse" Value="Música">Música
-
-					<input type="checkbox" name="interesse" Value="Esporte">Esporte
-
-					<input type="checkbox" name="interesse" Value="Livros">Livros
-
-					<input type="checkbox" name="interesse" Value="Religião">Religião
-
-					<td>
-
-				</tr>
-
-				<tr> 
-
-					<td style="color:blue;">Senha:</td>
-
-					<td><input type="password" name="txtpass"></td>
-
-				</tr>
-
-			</table>
-
-					<input type="submit" name="Btenviar" value="Gravar">
-
-					<input type="reset" name="Btenviar" value="Limpar">
-
-			</form>
-
-	
-
-		<body>
-
-	</head>
-
-</html>
+                <input type="submit" value="Enviar">
+            </input>
+          </form>
+        </section>
+      </main>
+</body>
